@@ -4,12 +4,14 @@ abstract class A{
     abstract void makeSound();
 
     void sleep() {
+
         System.out.println("Sleeping...");
     }
 }
 
 class D extends A {
     void makeSound() {
+
         System.out.println("Bark Bark");
     }
 }
