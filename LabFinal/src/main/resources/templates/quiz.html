@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Chemistry Quiz</title></head>
+<body>
+<h2>বাংলা রসায়ন কুইজ</h2>
+<form th:action="@{/submit-quiz}" method="post">
+    <p>১. পানির রাসায়নিক সংকেত কী?</p>
+    <input type="radio" name="q1" value="CO2" required /> ক. CO₂<br/>
+    <input type="radio" name="q1" value="H2O" /> খ. H₂O<br/>
+    <input type="radio" name="q1" value="O2" /> গ. O₂<br/>
+    <input type="radio" name="q1" value="NaCl" /> ঘ. NaCl<br/>
+
+    <p>২. পারমাণবিক সংখ্যার ভিত্তিতে মৌলগুলো কীভাবে সাজানো হয়?</p>
+    <input type="radio" name="q2" value="alphabetically" required /> ক. বর্ণানুক্রমে<br/>
+    <input type="radio" name="q2" value="structure" /> খ. গাঠনিক সূত্র অনুযায়ী<br/>
+    <input type="radio" name="q2" value="atomic" /> গ. পারমাণবিক সংখ্যা অনুযায়ী<br/>
+    <input type="radio" name="q2" value="mass" /> ঘ. আণবিক ভরের ভিত্তিতে<br/>
+
+    <br/><button type="submit">জমা দিন</button>
+</form>
+</body>
+</html>

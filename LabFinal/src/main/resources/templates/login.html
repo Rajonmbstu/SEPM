@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Login</title></head>
+<body>
+<h2>ছাত্র আইডি দিয়ে প্রবেশ করুন</h2>
+<form th:action="@{/start-quiz}" method="post">
+    <input type="text" name="studentId" placeholder="ছাত্র আইডি" required />
+    <button type="submit">শুরু করুন</button>
+</form>
+<p th:if="${error}" th:text="${error}"></p>
+</body>
+</html>
